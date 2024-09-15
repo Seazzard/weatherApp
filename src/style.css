@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.form {
+  padding: 40px 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.form__title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+}
+.form__input {
+  height: 30px;
+  border-radius: 3px 0 0 3px;
+  border: 1px solid black;
+  outline: none;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  transition: 1s;
+  width: 200px;
+}
+
+.form__input:focus {
+  transition: 1s;
+  box-shadow: 4px 15px 6px -1px rgba(34, 60, 80, 0.2);
+}
+
+.form__btn {
+  height: 30px;
+  border-radius: 0 3px 3px 0;
+  border: 1px solid black;
+  width: 120px;
+  border-left: none;
+  cursor: pointer;
+  background-color: blueviolet;
+  color: white;
+}
+
+.weather__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.weather__temp {
+  font-size: 40px;
+}
+
+.weather__middle {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.weather__switch {
+  margin: 0 10px;
+  align-self: flex-start;
+  display: flex;
+  column-gap: 5px;
+  font-size: 22px;
+}
+.weather__descr {
+  font-size: 25px;
+  color: violet;
+}
+
+.weather__switch-item {
+  cursor: pointer;
+}
+
+.weather__switch-item.active {
+  color: orange;
+}
+
+.fivedays {
+  height: 40px;
+  background: slateblue;
+  color: white;
+  cursor: pointer;
+  border: blueviolet;
+  margin: 15px auto 0;
+  display: block;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.back {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 120px;
+  height: 20px;
+  cursor: pointer;
+}
+.buttons {
+  padding-top: 40px;
+  display: flex;
+  column-gap: 40px;
+}
+.day-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.weather__row {
+  display: flex;
+  column-gap: 20px;
+  padding-top: 40px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+.weather__card {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.weather__card-time {
+  font-size: 20px;
+  color: violet;
+}
+
+.weather__card-temp {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  align-items: flex-end;
+  margin: 10px 0;
+}
+.weather__img {
+}
+
+.weather__card-cel {
+}
+
+.weather__card-descr {
+  font-size: 20px;
+  color: red;
+}
+.five-day {
+  padding: 50px 0 0;
+  position: relative;
+}
+
+.vanta {
+  position: fixed;
+  z-index: 0;
+  height: 100vh;
+  color: white;
+  background-color: slateblue;
+  width: 100%;
+}
